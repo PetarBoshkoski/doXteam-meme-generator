@@ -28,7 +28,10 @@ class Main extends React.Component {
             [name]: value
         })
     }
-
+    refreshPage() {
+        console.log("Reloading")
+        window.location.reload(false);
+    }
     render() {
         return(
             <div>
@@ -41,7 +44,7 @@ class Main extends React.Component {
                     </div>
                 </form>
                 <div className="meme-container">
-                    <img src={this.state.imgUrl} className="meme-image"></img>
+                    <img src={this.state.imgUrl} className="meme-image" onClick={this.refreshPage}></img>
                     <div className='top-text'><span className="text-dec">{this.state.topText}</span></div>
                     <div className='bottom-text'><span className="text-dec">{this.state.bottomText}</span></div>
                 </div>

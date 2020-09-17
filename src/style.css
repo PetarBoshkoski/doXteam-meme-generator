@@ -50,6 +50,7 @@
 }
 .bottom-text {
     position: absolute;
+    word-wrap: break-word;
     bottom: 0px;
     left: 40%;
     max-width: 500px;
@@ -58,6 +59,22 @@
     margin: 0 auto 0 auto;
     height: auto;
     width: 50%;
+}
+@media (max-width: 1200px) {
+    .top-text {
+        position: absolute;
+        word-wrap: break-word;
+        top: 0px;
+        left: 40%;
+        max-width: 300px;
+    }
+    .bottom-text {
+        position: absolute;
+        word-wrap: break-word;
+        bottom: 0px;
+        left: 40%;
+        max-width: 300px;
+    }
 }
 @media (max-width: 1000px) {
     .text-dec {
@@ -76,6 +93,20 @@
         -2px 0px 0 #000,
         2px 2px 5px #000;
     }
+    .top-text {
+        position: absolute;
+        word-wrap: break-word;
+        top: 0px;
+        left: 40%;
+        max-width: 200px;
+    }
+    .bottom-text {
+        position: absolute;
+        word-wrap: break-word;
+        bottom: 0px;
+        left: 40%;
+        max-width: 200px;
+    }
 }
 @media (max-width: 450px) {
     .text-dec {
@@ -93,6 +124,20 @@
         0px -2px 0 #000,
         -2px 0px 0 #000,
         2px 2px 5px #000;
+    }
+    .top-text {
+        position: absolute;
+        word-wrap: break-word;
+        top: 0px;
+        left: 40%;
+        max-width: 100px;
+    }
+    .bottom-text {
+        position: absolute;
+        word-wrap: break-word;
+        bottom: 0px;
+        left: 40%;
+        max-width: 100px;
     }
 }
 
