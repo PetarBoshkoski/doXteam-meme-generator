@@ -1,0 +1,56 @@
+.body {
+    position:absolute;    
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+}
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin: 0 auto;
+}
+.form-components {
+    margin: 10px 0px 10px 0px;   
+    text-align: center;
+    justify-content: center;
+}
+.meme-container {
+    text-align: center;
+    position: relative; 
+}
+.text-dec {
+    font-family: impact;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0px 2px 0 #000,
+    2px 0px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 2px 5px #000;
+}
+.top-text {
+    position: absolute;
+    word-wrap: break-word;
+    top: 0px;
+    left: 40%;
+    max-width: 500px;
+}
+.bottom-text {
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    max-width: 500px;
+}
+.meme-image {
+    margin: 0 auto 0 auto;
+    height: auto;
+    width: 50%;
+}
