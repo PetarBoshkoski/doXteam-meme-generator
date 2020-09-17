@@ -19,6 +19,12 @@ const HeaderTitle = styled.div`
     text-align: center;
     justify-content: center;
     margin: 0 auto;
+    @media (max-width: 450px) {
+        font-size:20px;
+    }
+    @media (max-width: 300px) {
+        font-size:10px;
+    }
 `;
 class Navbar extends React.Component {
     constructor() {
