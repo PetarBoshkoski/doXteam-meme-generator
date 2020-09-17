@@ -1,10 +1,22 @@
 import React from "react"
 import styled from 'styled-components'
+import errorImg from '../images/memeface.png'
+
 
 const StyledButton = styled.button`
     background-color: #9370DB;
     color: rgb(255, 255, 255);
     font-weight: bold;
+`;
+
+const StyledImg = styled.div`
+    background-image:${props => `url(${props.src})`};
+    height: 500px;
+    width: 500px;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;     
 `;
 class Main extends React.Component {
     constructor() {
@@ -12,13 +24,14 @@ class Main extends React.Component {
         this.state = {
             imgUrl: "",
             topText: "",
-            bottomText: ""
+            bottomText: "",
+            errored: false
         }
         this.handleChange = this.handleChange.bind(this)
     }
 
     handleButton() {
-        console.log("Button Generate Clicked!")
+
     }
 
     handleChange(event) {
@@ -27,11 +40,18 @@ class Main extends React.Component {
         this.setState({
             [name]: value
         })
+        console.log(errorImg)
     }
-    refreshPage() {
-        console.log("Reloading")
-        window.location.reload(false);
+    handleError() {
+        console.log("ERROR")
     }
+    // onError() {
+    //     if(!this.state.errored) {
+    //         this.setState({
+    //             imgUrl: 
+    //         })
+    //     }
+    // }
     render() {
         return(
             <div>
@@ -44,7 +64,8 @@ class Main extends React.Component {
                     </div>
                 </form>
                 <div className="meme-container">
-                    <img src={this.state.imgUrl} className="meme-image" onClick={this.refreshPage}></img>
+                    {/* <img src={this.state.imgUrl} className="meme-image" onerror={this.handleError}></img> */}
+                    <StyledImg src={this.state.imgUrl}/>
                     <div className='top-text'><span className="text-dec">{this.state.topText}</span></div>
                     <div className='bottom-text'><span className="text-dec">{this.state.bottomText}</span></div>
                 </div>

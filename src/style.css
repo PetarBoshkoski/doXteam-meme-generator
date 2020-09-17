@@ -25,6 +25,7 @@
     text-align: center;
     position: relative; 
 }
+
 .text-dec {
     font-family: impact;
     font-size: 2.5em;
@@ -45,14 +46,18 @@
     position: absolute;
     word-wrap: break-word;
     top: 0px;
-    left: 40%;
+    left: 25%;
+    right: 25%;
+    margin: 0 auto;
     max-width: 500px;
 }
 .bottom-text {
     position: absolute;
     word-wrap: break-word;
     bottom: 0px;
-    left: 40%;
+    margin: 0 auto;
+    left: 25%;
+    right: 25%;
     max-width: 500px;
 }
 .meme-image {
@@ -65,53 +70,26 @@
         position: absolute;
         word-wrap: break-word;
         top: 0px;
-        left: 40%;
-        max-width: 300px;
+        left: 25%;
+        right: 25%;
+        margin: 0 auto;
+        max-width: 500px;
     }
     .bottom-text {
         position: absolute;
         word-wrap: break-word;
         bottom: 0px;
-        left: 40%;
-        max-width: 300px;
+        margin: 0 auto;
+        left: 25%;
+        right: 25%;
+        max-width: 500px;
     }
 }
-@media (max-width: 1000px) {
-    .text-dec {
-        font-family: impact;
-        font-size: 0.9em;
-        text-transform: uppercase;
-        color: white;
-        letter-spacing: 1px;
-        text-shadow:2px 2px 0 #000,
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        0px 2px 0 #000,
-        2px 0px 0 #000,
-        0px -2px 0 #000,
-        -2px 0px 0 #000,
-        2px 2px 5px #000;
-    }
-    .top-text {
-        position: absolute;
-        word-wrap: break-word;
-        top: 0px;
-        left: 40%;
-        max-width: 200px;
-    }
-    .bottom-text {
-        position: absolute;
-        word-wrap: break-word;
-        bottom: 0px;
-        left: 40%;
-        max-width: 200px;
-    }
-}
+
 @media (max-width: 450px) {
     .text-dec {
         font-family: impact;
-        font-size: 0.5em;
+        font-size: 1em;
         text-transform: uppercase;
         color: white;
         letter-spacing: 1px;
@@ -129,22 +107,26 @@
         position: absolute;
         word-wrap: break-word;
         top: 0px;
-        left: 40%;
-        max-width: 100px;
+        left: 25%;
+        right: 25%;
+        margin: 0 auto;
+        max-width: 500px;
     }
     .bottom-text {
         position: absolute;
         word-wrap: break-word;
         bottom: 0px;
-        left: 40%;
-        max-width: 100px;
+        margin: 0 auto;
+        left: 25%;
+        right: 25%;
+        max-width: 500px;
     }
 }
 
 @media (max-width: 200px) {
     .text-dec {
         font-family: impact;
-        font-size: 5px;
+        font-size: 1em;
         text-transform: uppercase;
         color: white;
         letter-spacing: 1px;
@@ -157,5 +139,23 @@
         0px -2px 0 #000,
         -2px 0px 0 #000,
         2px 2px 5px #000;
+    }
+    .top-text {
+        position: absolute;
+        word-wrap: break-word;
+        top: 0px;
+        left: 25%;
+        right: 25%;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    .bottom-text {
+        position: absolute;
+        word-wrap: break-word;
+        bottom: 0px;
+        margin: 0 auto;
+        left: 25%;
+        right: 25%;
+        max-width: 500px;
     }
 }
